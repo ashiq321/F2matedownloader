@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_downloader"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fb"/>
+
+        <TextView
+            android:fontFamily="@font/seguisb"
+            android:textColor="@color/textColour"
+            android:textSize="16.9sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_dailoag"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/editText"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/past_link"
+            android:maxLines="1"
+            android:inputType="textUri"
+            android:dropDownWidth="match_parent"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/edit_text_back"
+            android:paddingLeft="20dp" />
+
+        <Button
+            android:id="@+id/btndwd"
+            android:background="@drawable/button_back"
+            android:text="@string/download"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/ui_bold"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="50dp"/>
+
+
+        <LinearLayout
+            android:background="#ECECEC"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="250dp">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
